@@ -1,6 +1,6 @@
-# _A BASIC CALCULATOR_
+# _A TEXT ANALYZER_
 
-#### _A simple calculator that performs basic arithmetic operations._
+#### _A text analyzer provides valuable insights into the textual content, making it easier to understand, summarize, and extract meaningful information from large volumes of text._
 
 #### By _**{DevDipo}**_
 
@@ -9,12 +9,13 @@
 * _Git_
 * _HTML_
 * _CSS_
+* _JQuery_
 * _JavaScript(Vanilla Javascript)_
 * _Bootstrap_
 
 ## Description
 
-_A calculator is a device that performs arithmetic operations on numbers. Basic calculators can do only addition, subtraction, multiplication and division mathematical calculations._
+_A text analyzer is a tool or program designed to analyze textual content and extract useful information or insights from it. It can perform various analyses and computations on the text to provide valuable data about its structure, readability, vocabulary, and more._
 
 ## Setup/Installation Requirements
 
