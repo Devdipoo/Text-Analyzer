@@ -70,52 +70,52 @@ function wordCounter(text) {
     return htmlString + "</p>";
   }
 
-  function threeMostCommonWords(sentence) {
-    if (noInputtedWord(sentence)) {
-      return;
-    }
+  // function threeMostCommonWords(sentence) {
+  //   if (noInputtedWord(sentence)) {
+  //     return;
+  //   }
 
-    //Convert the sentence to Lowercase and remove punctuation
-    const cleanedSentence = sentence.toLowerCase().replace(/[^\w\s]/g, '');
-    const words = cleanedSentence.split(/\s+/);
+  //   //Convert the sentence to Lowercase and remove punctuation
+  //   const cleanedSentence = sentence.toLowerCase().replace(/[^\w\s]/g, '');
+  //   const words = cleanedSentence.split(/\s+/);
 
-    //Create a unique array of words
-    const uniqueWords = [...new Set(words)];
+  //   //Create a unique array of words
+  //   const uniqueWords = [...new Set(words)];
     
-    //Create an array to store each word and its count
-    const wordCountsArray = [];
+  //   //Create an array to store each word and its count
+  //   const wordCountsArray = [];
 
-    //Count the occurence of each word
-    uniqueWords.forEach((uniqueWord) => {
-      let count = 0;
-      words.forEach((word) => {
-        if (uniqueWord === word) {
-          count++;
-        }
-      })
-      wordCountsArray.push([uniqueWord, count]);
-    });
+  //   //Count the occurence of each word
+  //   uniqueWords.forEach((uniqueWord) => {
+  //     let count = 0;
+  //     words.forEach((word) => {
+  //       if (uniqueWord === word) {
+  //         count++;
+  //       }
+  //     })
+  //     wordCountsArray.push([uniqueWord, count]);
+  //   });
 
-    //Sort the array by count in descending order
-    wordCountsArray.sort((a,b) => b[1] - a[1]);
+  //   //Sort the array by count in descending order
+  //   wordCountsArray.sort((a,b) => b[1] - a[1]);
 
-    //Get the top three most common words and their counts
-    const topWords = wordCountsArray.slice(0, 3);
+  //   //Get the top three most common words and their counts
+  //   const topWords = wordCountsArray.slice(0, 3);
 
-    //Initialize an HTML list with <ul> tag
-    let list = "<ul>";
+  //   //Initialize an HTML list with <ul> tag
+  //   let list = "<ul>";
 
-    //Loop through the top three words and create <li> tags
-    topWords.forEach(element => {
-      list += `<li> ${element[0]}: ${element[1]} </li> `
-    });
+  //   //Loop through the top three words and create <li> tags
+  //   topWords.forEach(element => {
+  //     list += `<li> ${element[0]}: ${element[1]} </li> `
+  //   });
 
-    // Close the HTML list with </ul> tag
-    list += "</ul>"
+  //   // Close the HTML list with </ul> tag
+  //   list += "</ul>"
 
-    //Return the full list as an HTML string
-    return list;
-  }
+  //   //Return the full list as an HTML string
+  //   return list;
+  // }
 
 // Utility Logic
 
