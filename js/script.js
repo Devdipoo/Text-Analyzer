@@ -119,12 +119,12 @@ function wordCounter(text) {
 
 // Utility Logic
 
-// function noInputtedWord(word, text) {
-//   if ((text.trim().length === 0) || (word.trim().length === 0)) {
-//     return true;
-//   }
-//   return false;
-// }
+function noInputtedWord(word, text) {
+  if ((text.trim().length === 0) || (word.trim().length === 0)) {
+    return true;
+  }
+  return false;
+}
 
   $(document).ready(function(){
     $("form#word-counter").submit(function(event){
