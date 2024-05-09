@@ -126,17 +126,17 @@ function noInputtedWord(word, text) {
   return false;
 }
 
-  $(document).ready(function(){
-    $("form#word-counter").submit(function(event){
-      event.preventDefault();
-      const passage = $("#text-passage").val();
-      const word = $("#word").val();
-      const wordCount = wordCounter(passage);
-      const occurrencesOfWord = numberOfOccurrencesInText(word, passage);
-      let offensiveWord = badWords(passage)
-      $("#total-count").html(wordCount);
-      $("#selected-count").html(occurrencesOfWord);
-      $("#bolded-passage").html(boldPassage(word, offensiveWord));
-      $("topThree").html(threeMostCommonWords(passage))
-    });
-  });
+  // $(document).ready(function(){
+  //   $("form#word-counter").submit(function(event){
+  //     event.preventDefault();
+  //     const passage = $("#text-passage").val();
+  //     const word = $("#word").val();
+  //     const wordCount = wordCounter(passage);
+  //     const occurrencesOfWord = numberOfOccurrencesInText(word, passage);
+  //     let offensiveWord = badWords(passage)
+  //     $("#total-count").html(wordCount);
+  //     $("#selected-count").html(occurrencesOfWord);
+  //     $("#bolded-passage").html(boldPassage(word, offensiveWord));
+  //     $("topThree").html(threeMostCommonWords(passage))
+  //   });
+  // });
